@@ -46,7 +46,7 @@ NTFY_CHANNEL=https://ntfy.sh/your-channel
 
 2. Run the script
 ```
-python ./rss-to-ntfy.py
+python3 ./rss-to-ntfy.py
 ```
 
 3. (Optional) Set up as a scheduled task

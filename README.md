@@ -50,16 +50,39 @@ python ./rss-to-ntfy.py
 ```
 
 3. (Optional) Set up as a scheduled task
-   - On Linux (using cron):
+   - If you are not using a virtual environment:
      ```
      */5 * * * * /path/to/python /path/to/rss-to-ntfy.py
      ```
-   - On Windows (using Task Scheduler):
-     - Create a new task
-     - Set trigger to run every 5 minutes
-     - Action: Start Program
-     - Program/script: path/to/python.exe
-     - Arguments: path/to/rss_notifier.py
+
+    - If you are using a virtual environment, create a shell script (e.g., `run_rss_notifier.sh`):
+      
+      ```
+      #!/bin/bash 
+      
+      # Set path to your project
+      PROJECT_DIR="/path/to/your/project" 
+      
+      # Activate virtual environment and run script
+      source $PROJECT_DIR/venv/bin/activate 
+      python $PROJECT_DIR/rss_notifier.py
+      
+      # Deactivate virtual environment
+      deactivate
+      ```
+      
+      Make it executable:
+      
+      ```
+      chmod +x run_rss_notifier.sh
+      ```
+      
+      Add to crontab:
+      
+      ```
+      # Run every 5 minutes 
+      */5 * * * * /path/to/your/project/run_rss_notifier.sh >> /path/to/your/project/cron.log 2>&1
+      ```
 
 ## Configuration Options
 The script can be configured through environment variables or by modifying the `Config` class:

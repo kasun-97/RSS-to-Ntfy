@@ -52,7 +52,7 @@ python ./rss-to-ntfy.py
 3. (Optional) Set up as a scheduled task
    - On Linux (using cron):
      ```
-     */5 * * * * /path/to/python /path/to/rss_notifier.py
+     */5 * * * * /path/to/python /path/to/rss-to-ntfy.py
      ```
    - On Windows (using Task Scheduler):
      - Create a new task

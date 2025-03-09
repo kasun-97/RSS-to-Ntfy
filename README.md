@@ -23,7 +23,7 @@ A simple python based script that monitors RSS feeds and sends new posts as noti
 1. Clone the repository
 ```
 git clone https://github.com/kasun-97/RSS-to-Ntfy
-cd Rss-to-Ntfy
+cd RSS-to-Ntfy
 ```
 
 2. Create a virtual environment (optional but recommended)

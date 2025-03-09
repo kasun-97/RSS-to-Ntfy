@@ -65,7 +65,7 @@ python3 ./rss-to-ntfy.py
       
       # Activate virtual environment and run script
       source $PROJECT_DIR/venv/bin/activate 
-      python3 $PROJECT_DIR/rss_notifier.py
+      python3 $PROJECT_DIR/rss-to-ntfy.py
       
       # Deactivate virtual environment
       deactivate

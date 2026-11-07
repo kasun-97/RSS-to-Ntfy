@@ -1,0 +1,15 @@
+# Secrets / local config
+.env
+
+# Runtime state and logs
+seen.json
+seen.json.tmp
+last_seen.txt
+*.log
+*.log.*
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
